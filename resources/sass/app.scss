@@ -1,0 +1,58 @@
+// Import de Bootstrap si ce n'est pas déjà fait
+@import '~bootstrap/scss/bootstrap';
+
+// Ton style personnalisé
+.page-title {
+    color: #ff5733;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.sauce-card {
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    overflow: hidden;
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 10px;
+    }
+
+    .sauce-image {
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .card-body {
+        text-align: center;
+    }
+
+    .btn-modifier {
+        background-color: #ff5733;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 8px;
+        transition: background-color 0.3s ease-in-out;
+
+        &:hover {
+            background-color: darken(#ff5733, 10%);
+        }
+    }
+}
+
+.add-sauce-btn {
+    display: block;
+    width: max-content;
+    margin: 20px auto;
+    padding: 12px 20px;
+    background-color: #ff5733;
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px;
+    transition: background-color 0.3s ease-in-out;
+
+    &:hover {
+        background-color: darken(#ff5733, 10%);
+    }
+}
